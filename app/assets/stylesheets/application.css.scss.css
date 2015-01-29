@@ -1,0 +1,203 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('Roboto-Thin-webfont.eot');
+    src: url('Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Thin-webfont.woff') format('woff'),
+         url('Roboto-Thin-webfont.ttf') format('truetype'),
+         url('Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'robotoregular';
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+h1 {
+	font-family: 'robotothin';
+	font-weight: bold;
+	font-style: normal;
+	color: white;
+}
+
+h2 {
+	font-family: 'robotothin';
+	font-weight: normal;
+	font-style: normal;
+	border-bottom: 1px solid darkgrey;
+	padding-bottom: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* GENERAL LAYOUT */
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -50px;
+}
+
+.navbar {
+	background-color: #1E88E5;
+	border: none;
+	border-radius: none;
+
+	.burger {
+	text-decoration: none;
+	color: white;
+	float: left;
+	background-color: #1E88E5;
+	border: 0;
+	margin: auto 0;
+	}
+
+	.burger, h1 {
+		font-size: 2.5em;
+		float: left;
+		display: inline;
+		padding: 10px;
+		margin: 0;
+		line-height: 2.5em;
+	}
+
+}
+
+/* OFF CANVAS NAVIGATION */
+
+#icon {
+	color: darkgrey;
+	border-bottom: 1px solid darkgrey;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.off-vp-nav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -10px;
+	height: 100%;
+	background-color: white;
+	padding: 0;
+	display: none;
+
+	border: 1px solid darkgrey;
+
+
+	.btn-group-vertical {
+		width: 100%;
+
+		.btn {
+			position: relative;
+			width: 100%;
+			text-align: center;
+			border: none;
+		}
+	}
+}
+
+.main-links {
+	margin-top: 10%
+}
+
+.social-links {
+	margin-top: 20%;
+}
+
+
+
+/* 
+
+bring in the off canvas menu on button click
+float above the other page items
+darken the main body 
+disable scroll
+remove on click of main body 
+
+*/
+
+/* MAIN PAGE IMAGE AND TEXT */
+
+.main-image {
+	height: 400px;
+	background-image: image-url("zen_stone_03.jpg");
+	background-position: 0 60%;
+	background-size: cover;
+	opacity: 1;
+	z-index: 0;
+}
+
+.main-article {
+	z-index: 1;
+	margin-top: -350px;
+	margin-left: 20px;
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	width: 50%;
+	height: 500px;
+	opacity: 0.8;
+	padding: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: #1E88E5;
+	height: 50px;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.footer, .push {
+	height: 50px;
+}
+
