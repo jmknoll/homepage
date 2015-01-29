@@ -40,5 +40,13 @@ $(document).ready(function(){
 		};
 	});
 
+	$(document).click(function(){
+		$(".intro").fadeOut(2000)
+	});
 
+	$(document).click(function(){
+	if ($('.intro').css('display') == 'none') {
+				$('body').css("overflow", "scroll");
+		};
+		})
 });

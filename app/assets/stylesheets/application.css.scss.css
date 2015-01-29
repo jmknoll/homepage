@@ -110,6 +110,11 @@ html, body {
 
 }
 
+.main-content {
+	width: 95%;
+	margin: 0 auto;
+}
+
 /* OFF CANVAS NAVIGATION */
 
 #icon {
@@ -194,10 +199,81 @@ remove on click of main body
 	background-color: #1E88E5;
 	height: 50px;
 	width: 100%;
-	margin-bottom: 0;
 }
 
 .footer, .push {
 	height: 50px;
 }
+
+.footer-text {
+	position: relative;
+	bottom: 0;
+	top: 15px;
+	color: white;
+	margin: 0 10px;
+}
+
+
+
+/* PORTFOLIO STYLES */
+
+.title {
+	color: black;
+}
+
+/* INTRO STYLES */
+
+.intro {
+	background-image: image-url("shanghai_loving.jpg");
+	margin-top: -200px;
+	background-position: 0 -200px;
+	background-color: black;
+  	background-size: cover;
+  	z-index: 2;
+	position: fixed;
+	height: 120%;
+	width: 100%;
+}
+
+.intro-name {
+	color: black;
+	font-weight: bold;
+	z-index: 3;
+	text-align: center;
+	margin: 20% auto;
+	font-size: 5.0em;
+	border: 1px solid lightgrey;
+	background-color: white;
+	opacity: 0.6;
+}
+
+.intro-name:hover {
+		opacity: 0.8;
+		background-color: white;
+	}
+
+/*
+body {
+	overflow: hidden;
+}
+*/
+
+.img-circle {
+	background-image: url("images/profile.jpg");
+	width: 90%;
+	margin-left: 10%;
+}
+
+.social-icons {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 1.1em;
+}
+
+.social-icons a:hover {
+	text-decoration: none;
+}
+
+
 
